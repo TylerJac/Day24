@@ -3,87 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Tomb of Nazarick</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <nav>
+<body class="bg-dark text-danger">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a href="#" class="logo">Logo</a>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02mof1BT5P7qOliU3-5MFdlN59V6yzB6vnw&s" alt="Logo" class="d-inline-block align-text-top logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-danger" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <section id="hero" class="hero">
+    <!-- Hero Section -->
+    <section id="hero" class="hero text-danger text-center d-flex align-items-center justify-content-center" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZTFjYjk1NDktYjk2OS00M2UzLWI4YWMtNWUwNWI3OWJjMDMwXkEyXkFqcGdeQXVyODU3MDc2NzI@._V1_.jpg'); height: 100vh;">
         <div class="container">
-            <h1>Welcome to OUr Website</h1>
-            <p> blah blah blah</p>
-            <a href="#about" class="cta-button">Learn More</a>
+            <h1>Welcome to Our Organization</h1>
+            <p>Your support starts here</p>
+            <a href="#about" class="btn btn-outline-danger">Learn How</a>
         </div>
     </section>
-    <section id="about" class="about">
+
+    <!-- About Section -->
+    <section id="about" class="about py-5">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About</h2>
-                    <p>blahblahblahblah</p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>We have dedicated our enitre beings to Ainz Ooal Gown, our rightful Supreme Being, and we expect the same from you.</p>
                 </div>
-                <div class="about-image">
-                    <img src="about-images.jpg" alt="about us">
+                <div class="col-md-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02mof1BT5P7qOliU3-5MFdlN59V6yzB6vnw&s" class="img-fluid rounded" alt="About Us">
                 </div>
             </div>
         </div>
     </section>
-    <section id="features" class="features">
+
+    <!-- Features Section -->
+    <section id="features" class="features py-5">
         <div class="container">
-            <h2>Our Features</h2>
-            <div class="feature-items">
-                <div class="feature-item">
-                    <i class="icon icon-feature1"></i>
-                    <h3>Feature 1</h3>
-                    <p>Detail about feature 1...</p>
+            <h2 class="text-center mb-4">Our Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="icon icon-feature1 mb-3" style="font-size: 50px; color: #ff6600;"></i>
+                            <h5 class="card-title">Adopting the Ideals and Beliefs</h5>
+                            <p class="card-text">We promotes the ideals and philosophies of Ainz Ooal Gown. This includes the belief in his supreme power, wisdom, and right to rule. Members are encouraged to spread these beliefs and convert others to their cause.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <i class="icon icon-feature2"></i>
-                    <h3>Feature 2</h3>
-                    <p>Detail about feature 2...</p>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="icon icon-feature2 mb-3" style="font-size: 50px; color: #ff6600;"></i>
+                            <h5 class="card-title">Access to Resources and Protection</h5>
+                            <p class="card-text">Members gain access to the extensive resources of Nazarick, including powerful magical items, potions, and financial support. They also receive protection from the formidable forces of Nazarick.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <i class="icon icon-feature3"></i>
-                    <h3>Feature 3</h3>
-                    <p>Detail about feature 3...</p>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="icon icon-feature3 mb-3" style="font-size: 50px; color: #ff6600;"></i>
+                            <h5 class="card-title">Exclusive Knowledge and Secrets</h5>
+                            <p class="card-text">We provide access to exclusive knowledge about Nazarick, its history, and the true nature of Ainz Ooal Gown. Members are privy to secrets that are not shared with outsiders.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact" class="contact">
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5">
         <div class="container">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+            <h2 class="text-center mb-4">Contact Us Now</h2>
+            <form id="contact-form" onsubmit="sendEmail(event)">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="submit-button">Send</button>
+                <button type="submit" class="btn btn-outline-success">Send</button>
             </form>
         </div>
     </section>
-    <footer>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-3">
         <div class="container">
-            <p>&copy; 2024 ME comp. All rights reserved</p>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="email.js"></script>
 </body>
 </html>
