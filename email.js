@@ -1,4 +1,4 @@
-// Initialize EmailJS with your user ID
+// Initialize EmailJS with keys
 emailjs.init("3xe7QvERMbo26l7sp");
 
 // Function to send email
